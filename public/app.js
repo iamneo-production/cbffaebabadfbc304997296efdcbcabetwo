@@ -61,7 +61,7 @@ const resetGame = () => {
         btn.removeAttribute('disabled');
         btn.value = ''; // Clear the cell display
     });
-    res.setAttribute('disabled');
+    res.setAttribute('disabled',true);
 };
 
 btns.forEach((btn, i) => {
