@@ -8,5 +8,92 @@ body {
     background-position: center center;
     font-family: "Radio Canada", sans-serif;
   }
-  
-/* Enter your styling here */
+  #header {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    font-size: 50px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    border: 1px soild  #0000005e;
+    border-radius: 5px;
+    width: 75px;
+    height: 75px;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    margin: 2px;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.btn:disabled {
+  cursor: no-drop;
+  transform: scale(1.0);
+}
+
+#reset:disabled {
+    color: black;
+    cursor: no-drop;
+    /* Changed cursor value to "not-allowed" */
+}
+
+.result-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #0000005e; 
+    border-radius: 10px;
+    text-align: center;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 1px;
+}
+
+.rst1 {
+    text-align: center;
+}
+
+#reset {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #00000096; 
+  border-radius: 5px;
+}
+
+#reset:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#reset:disabled {
+  cursor: no-drop;
+  transform: scale(1.0);
+}
+
+.result {
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+}
+  /* reset btn stl */
