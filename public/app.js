@@ -32,11 +32,15 @@ const ticTacToe = (element, index) => {
 
             // Disable all buttons since the game is over
             btns.forEach((btn) => btn.setAttribute('disabled', true));
+
+            res.removeAttribute('disabled');
             return;
         }
     }
     if (!cells.includes('')) {
         result.textContent = "It's a draw!";
+
+        res.removeAttribute('disabled');
         return;
     }
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
@@ -57,10 +61,11 @@ const resetGame = () => {
         btn.removeAttribute('disabled');
         btn.value = ''; // Clear the cell display
     });
+    res.setAttribute('disabled');
 };
 
 btns.forEach((btn, i) => {
     btn.addEventListener('click', () => ticTacToe(btn, i));
 });
 
-document.querySelector('#reset').addEventListener('click', resetGame);
+res.addEventListener('click', resetGame);
