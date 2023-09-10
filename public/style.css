@@ -30,7 +30,7 @@ body {
 }
 
 .btn {
-    border: 2px solid #0000004f;
+    border: 1px soild  #0000005e;
     border-radius: 5px;
     width: 75px;
     height: 75px;
@@ -62,7 +62,7 @@ body {
 
 .result-container {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #0000003f; 
+    border: 1px solid #0000005e; 
     text-align: center;
     max-width: 200px;
     margin: 20px auto;
@@ -71,6 +71,17 @@ body {
 
 .rst1 {
     text-align: center;
+}
+
+.rst1:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.btn:disabled {
+  cursor: no-drop;
+  transform: scale(1.0);
 }
 
 .result {
