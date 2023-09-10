@@ -63,6 +63,7 @@ body {
 .result-container {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #0000005e; 
+    border-radius: 10px;
     text-align: center;
     max-width: 200px;
     margin: 20px auto;
@@ -73,7 +74,14 @@ body {
     text-align: center;
 }
 
+#reset {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #00000096; 
+  border-radius: 5px;
+}
+
 #reset:hover {
+  background-color: rgba(255, 255, 255, 0.95);
   transform: scale(1.05);
   cursor: pointer;
 }
