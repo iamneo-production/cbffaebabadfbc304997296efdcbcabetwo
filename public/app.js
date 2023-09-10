@@ -16,6 +16,7 @@ let conditions = [
 
 // Function to handle player moves
 const ticTacToe = (element, index) => {
+    console.log(0);
     // Your game logic here
     if (cells[index] || result.textContent) return;
 
