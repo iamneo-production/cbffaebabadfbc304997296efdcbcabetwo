@@ -73,12 +73,12 @@ body {
     text-align: center;
 }
 
-.rst1:hover {
+#reset:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
 
-.rst1:disabled {
+#reset:disabled {
   cursor: no-drop;
   transform: scale(1.0);
 }
