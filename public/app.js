@@ -3,6 +3,7 @@ let cells = ['', '', '', '', '', '', '', '', ''];
 let currentPlayer = 'X';
 let result = document.querySelector('.result');
 let btns = document.querySelectorAll('.btn');
+let res= document.querySelector('#reset');
 let conditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -18,7 +19,7 @@ let conditions = [
 const ticTacToe = (element, index) => {
     console.log(0);
     // Your game logic here
-    if (cells[index] || result.textContent) return;
+    if (cells[index] || !cells.includes('')) return;
 
     cells[index] = currentPlayer;
     element.value = currentPlayer;
